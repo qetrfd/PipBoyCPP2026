@@ -62,3 +62,24 @@ Planned improvements:
 - Touch-friendly layout  
 - Expanded modular views  
 
+
+---
+
+## Future Work
+
+- Real-time sensor integration  
+- Serial/UART device support  
+- Embedded deployment optimization  
+- Theming system  
+- Optional C++ performance modules  
+
+---
+
+## Author
+
+Fernando Hiram Santillán Rodríguez  
+---
+
+## License
+
+Educational and portfolio use.
