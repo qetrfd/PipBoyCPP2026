@@ -1,85 +1,174 @@
 # Pip-Boy Interface
 
-Retro-futuristic embedded HMI dashboard inspired by Fallout-style interfaces.  
-Designed for real-time system monitoring and hardware interaction using a Raspberry Pi platform.
+![C++](https://img.shields.io/badge/C++-17-blue)
+![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi-green)
+![Status](https://img.shields.io/badge/Status-Prototype-orange)
+![UI](https://img.shields.io/badge/UI-Retro%20Futuristic-9cf)
+
+**Pip-Boy Interface** is a retro-futuristic embedded dashboard inspired by the iconic Pip-Boy devices from the *Fallout* universe. The project explores the design of responsive human–machine interfaces (HMI) for embedded systems using **C++** and lightweight graphical frameworks.
+
+The interface provides a real-time monitoring dashboard capable of displaying system information, interacting with connected hardware, and acting as a control panel for embedded devices.
+
+The project focuses on **performance, modular architecture, and embedded compatibility**, making it suitable for platforms such as **Raspberry Pi** or similar embedded systems.
 
 ---
 
-## Overview
+# Project Overview
 
-The Pip-Boy Interface is an experimental human–machine interface (HMI) project that combines a retro-futuristic visual style with embedded control concepts. The system provides an interactive dashboard for monitoring system states and controlling connected hardware modules.
+Pip-Boy Interface combines retro-futuristic UI design with embedded system interaction. The system acts as a modular dashboard capable of visualizing system data and controlling connected components.
 
-This project focuses on UI responsiveness, modular structure, and integration with embedded environments.
+Inspired by wearable computing concepts, the interface is designed to simulate a **compact control device** capable of monitoring system states and interacting with hardware modules.
 
----
+The project serves as both:
 
-## Tech Stack
-
-- Python  
-- Tkinter / PySide6  
-- Raspberry Pi  
-- Embedded interface concepts  
+* an experiment in **embedded UI design**
+* a **prototype monitoring dashboard** for hardware-connected systems.
 
 ---
 
-## Key Features
+# Features
 
-- Retro-futuristic Pip-Boy inspired UI  
-- Real-time dashboard layout  
-- Modular screen architecture  
-- Hardware control interface ready  
-- Lightweight desktop implementation  
-- Embedded-friendly design  
-
----
-
-## System Architecture
-
-- UI Layer: Python (Tkinter/PySide6)  
-- Control Layer: Python logic modules  
-- Hardware Layer: Raspberry Pi GPIO (expandable)  
+* Retro-futuristic Pip-Boy inspired interface
+* Real-time monitoring dashboard
+* Modular screen architecture
+* Hardware interaction ready
+* Lightweight implementation in C++
+* Embedded-friendly design
+* Expandable module system
 
 ---
 
-## Project Goals
+# Architecture
 
-- Explore embedded HMI design patterns  
-- Develop responsive control dashboards  
-- Integrate software interfaces with hardware platforms  
-- Prototype a wearable/desktop monitoring concept  
+The system follows a layered architecture separating interface rendering, application logic, and hardware interaction.
 
----
+```text
+User
+ │
+ ▼
+Interface Layer
+(C++ UI rendering)
+ │
+ ▼
+Application Layer
+(Control logic modules)
+ │
+ ▼
+Hardware Layer
+(Raspberry Pi GPIO / external devices)
+```
 
-## Status
-
-Work in progress — active development.
-
-Planned improvements:
-
-- GPIO live integration  
-- Additional monitoring widgets  
-- Performance optimization  
-- Touch-friendly layout  
-- Expanded modular views  
-
-
----
-
-## Future Work
-
-- Real-time sensor integration  
-- Serial/UART device support  
-- Embedded deployment optimization  
-- Theming system  
-- Optional C++ performance modules  
+This separation allows the system to scale easily as new modules, sensors, or hardware interfaces are added.
 
 ---
 
-## Author
+# Tech Stack
 
-Fernando Hiram Santillán Rodríguez  
+The system is built using technologies suitable for high-performance embedded applications.
+
+* **C++**
+* **Embedded UI frameworks**
+* **Raspberry Pi**
+* **GPIO hardware interaction**
+* **Embedded HMI concepts**
+
 ---
 
-## License
+# Project Structure
 
-Educational and portfolio use.
+```text
+pipboy-interface
+├── src/            # Core application source code
+├── ui/             # Interface components and screens
+├── modules/        # Functional dashboard modules
+├── assets/         # Visual resources and themes
+├── include/        # Header files
+├── CMakeLists.txt  # Build configuration
+└── README.md
+```
+
+The modular structure allows new dashboard screens or control modules to be integrated without modifying the core system.
+
+---
+
+# Build Instructions
+
+Clone the repository:
+
+```bash
+git clone https://github.com/qetrfd/pipboy-interface.git
+cd pipboy-interface
+```
+
+Create a build directory:
+
+```bash
+mkdir build
+cd build
+```
+
+Compile the project:
+
+```bash
+cmake ..
+make
+```
+
+Run the application:
+
+```bash
+./pipboy
+```
+
+---
+
+# Development Status
+
+⚠️ **Prototype / Early Development**
+
+This project is currently under active development and represents an experimental prototype.
+
+Current limitations may include:
+
+* incomplete hardware integration
+* experimental UI components
+* ongoing architectural improvements
+
+The repository primarily documents the early development of the interface and its embedded design approach.
+
+---
+
+# Project Goals
+
+The main objectives of the Pip-Boy Interface include:
+
+* Exploring embedded HMI design patterns
+* Developing responsive control dashboards
+* Integrating software interfaces with hardware platforms
+* Experimenting with retro-futuristic UI design
+* Creating a modular embedded monitoring system
+
+---
+
+# Future Development
+
+Planned improvements include:
+
+* Real-time sensor monitoring
+* GPIO device integration
+* Touch-friendly interface layout
+* Additional dashboard modules
+* Serial / UART device support
+* Embedded performance optimization
+
+---
+
+# Author
+
+**Fernando Hiram Santillán Rodríguez**
+
+---
+
+# License
+
+This project is intended for **educational, experimental, and portfolio purposes**.
